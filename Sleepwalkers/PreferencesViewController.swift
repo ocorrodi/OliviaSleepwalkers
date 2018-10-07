@@ -59,15 +59,15 @@ class PreferencesViewController: UIViewController {
         
         switch segmentedControl2.selectedSegmentIndex {
         case 0:
-            move = 4
+            move = 8
             defaults.set(move, forKey:"move");
             
         case 1:
-            move = 6
+            move = 9
             defaults.set(move, forKey:"move");
             
         case 2:
-            move = 8
+            move = 10
             defaults.set(move, forKey:"move");
             
         default:

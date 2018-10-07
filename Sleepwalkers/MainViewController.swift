@@ -154,7 +154,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
         contactNumber.text = "Contact Number: " + ( defaults.string(forKey: "contactNumber"))!
         
         // For use in background
-        detectSteps()
+        steps = detectSteps()
         self.locationManager.requestAlwaysAuthorization()
         if CLLocationManager.locationServicesEnabled() {
             locationManager.delegate = self as? CLLocationManagerDelegate
@@ -167,29 +167,11 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     //MARK: - Location related functions + Buttons
     
     @IBAction func mainButtonTapped(_ sender: UIButton) {
-        if isRinging{
-            avPlayer?.stop()
-            isRinging = false
-            isGettingLocation = false
-            UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
-            mainButton.setAttributedTitle(NSAttributedString(string: sunEmoji), for: .normal)
-            self.backgroundView.layer.backgroundColor = lightGrayColor.cgColor
-            self.contactNumber.textColor = darkGrayColor
-            self.nameOfContactTextField.textColor = darkGrayColor
-            self.sleepModeLabel.textColor = darkGrayColor
-            self.sleepModeLabel2.textColor = darkGrayColor
-            self.helpLabel.textColor = darkGrayColor
-            self.sleepModeLabel.text = "Tap before Sleeping"
-            self.sleepModeLabel2.text = "Sleep Mode is Off"
-            self.settingButton.setBackgroundImage(#imageLiteral(resourceName: "DarkGearImage.png"), for: .normal)
-            self.infoButton.tintColor = darkGrayColor
-            self.sendMessageButton.setTitleColor(lightGrayColor, for: .normal)
-            self.sendMessageButton.layer.backgroundColor = navyColor.cgColor
-        }
-        
-        if isGettingLocation {
+        print(isGettingLocation)
+        if isGettingLocation == true{
             isGettingLocation = false
             avPlayer?.stop()
+            avPlayer?.pause()
             isRinging = false
             UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
             mainButton.setAttributedTitle(NSAttributedString(string: sunEmoji), for: .normal)
@@ -212,6 +194,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
             isGettingLocation = true
             self.reloadTimer()
             avPlayer?.stop()
+            avPlayer?.pause()
             UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.lightContent, animated: true)
             mainButton.setAttributedTitle(NSAttributedString(string: moonEmoji), for: .normal)
             self.backgroundView.backgroundColor = navyColor
@@ -227,43 +210,66 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
             self.sendMessageButton.setTitleColor(navyColor, for: .normal)
             self.sendMessageButton.layer.backgroundColor = lightGrayColor.cgColor
         }
+        if isRinging{
+            avPlayer?.stop()
+            avPlayer?.pause()
+            isRinging = false
+            isGettingLocation = false
+            UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
+            mainButton.setAttributedTitle(NSAttributedString(string: sunEmoji), for: .normal)
+            self.backgroundView.layer.backgroundColor = lightGrayColor.cgColor
+            self.contactNumber.textColor = darkGrayColor
+            self.nameOfContactTextField.textColor = darkGrayColor
+            self.sleepModeLabel.textColor = darkGrayColor
+            self.sleepModeLabel2.textColor = darkGrayColor
+            self.helpLabel.textColor = darkGrayColor
+            self.sleepModeLabel.text = "Tap before Sleeping"
+            self.sleepModeLabel2.text = "Sleep Mode is Off"
+            self.settingButton.setBackgroundImage(#imageLiteral(resourceName: "DarkGearImage.png"), for: .normal)
+            self.infoButton.tintColor = darkGrayColor
+            self.sendMessageButton.setTitleColor(lightGrayColor, for: .normal)
+            self.sendMessageButton.layer.backgroundColor = navyColor.cgColor
+        }
+
         
     }
     
     //MARK: - Wake up and get location functions
     
     func wakeUp() {
-        if let urlpath = Bundle.main.path(forResource: "alarmNoise",ofType: "wav") {
+        if isGettingLocation {
+            if let urlpath = Bundle.main.path(forResource: "alarmNoise",ofType: "wav") {
             //let url = NSURL.fileURL(withPath: urlpath!)
-            let url = URL(fileURLWithPath: urlpath)
+                let url = URL(fileURLWithPath: urlpath)
             //var audioPlayer = AVAudioPlayer()
             
-            do{
-                let sleepHeaviness = defaults.float(forKey: "sleepHeaviness")
-                let volumeView = MPVolumeView()
-                if let view = volumeView.subviews.first as? UISlider{
-                    view.value = sleepHeaviness
-                }
-                avPlayer = try AVAudioPlayer(contentsOf: url)
-                avPlayer.prepareToPlay()
-                avPlayer.play()
-                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-                AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
-                mainButton.setAttributedTitle(NSAttributedString(string: clockEmoji), for: .normal)
-                isRinging = true
-                self.sleepModeLabel.text = "Tap Alarm to Stop"
-                self.backgroundView.layer.backgroundColor = navyColor.cgColor
-                self.settingButton.setTitleColor(lightGrayColor, for: .normal)
-                self.contactNumber.textColor = lightGrayColor
-                self.nameOfContactTextField.textColor = lightGrayColor
-                self.sleepModeLabel.textColor = lightGrayColor
-                self.infoButton.setTitleColor(lightGrayColor, for: .normal)
-                self.settingButton.setBackgroundImage(#imageLiteral(resourceName: "LightGearImage.png"), for: .normal)
+                do{
+                    let sleepHeaviness = defaults.float(forKey: "sleepHeaviness")
+                    let volumeView = MPVolumeView()
+                    if let view = volumeView.subviews.first as? UISlider{
+                        view.value = sleepHeaviness
+                    }
+                    avPlayer = try AVAudioPlayer(contentsOf: url)
+                    avPlayer.prepareToPlay()
+                    avPlayer.play()
+                    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+                    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+                    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+                    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate)
+                    mainButton.setAttributedTitle(NSAttributedString(string: clockEmoji), for: .normal)
+                    isRinging = true
+                    self.sleepModeLabel.text = "Tap Alarm to Stop"
+                    self.backgroundView.layer.backgroundColor = navyColor.cgColor
+                    self.settingButton.setTitleColor(lightGrayColor, for: .normal)
+                    self.contactNumber.textColor = lightGrayColor
+                    self.nameOfContactTextField.textColor = lightGrayColor
+                    self.sleepModeLabel.textColor = lightGrayColor
+                    self.infoButton.setTitleColor(lightGrayColor, for: .normal)
+                    self.settingButton.setBackgroundImage(#imageLiteral(resourceName: "LightGearImage.png"), for: .normal)
                 
-            } catch let error as NSError {
-                print(error.localizedDescription)
+                } catch let error as NSError {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -285,7 +291,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     
     //MARK: - Step detection function
     
-    func detectSteps(){
+    func detectSteps() -> Int{
         if(CMPedometer.isStepCountingAvailable()){
             //            print(self.steps)
             let move = defaults.integer(forKey: "move")
@@ -309,5 +315,6 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
                 }
             }
         }
+        return self.steps
     }
 }

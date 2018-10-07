@@ -14,7 +14,7 @@
         <!--Profile View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="Sleepwalkers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ProfileViewController" customModule="The_Walking_Sleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -157,7 +157,7 @@
         <!--redoPreferences-->
         <scene sceneID="QIB-6y-alT">
             <objects>
-                <viewController title="redoPreferences" id="YkN-Lb-Un7" customClass="MainViewController" customModule="Sleepwalkers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="redoPreferences" id="YkN-Lb-Un7" customClass="MainViewController" customModule="The_Walking_Sleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vf7-Tz-ylu"/>
                         <viewControllerLayoutGuide type="bottom" id="yS7-pe-Xew"/>
@@ -297,7 +297,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the gear to change information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ib-ch-mVQ">
-                                <rect key="frame" x="54" y="510.5" width="267" height="23.5"/>
+                                <rect key="frame" x="54" y="510" width="267" height="23.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.47850576039999998" green="0.47849634289999998" blue="0.47850272059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -344,7 +344,7 @@
         <!--Info View Controller-->
         <scene sceneID="2wv-Nx-SX5">
             <objects>
-                <viewController id="sBO-ax-38J" customClass="InfoViewController" customModule="Sleepwalkers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sBO-ax-38J" customClass="InfoViewController" customModule="The_Walking_Sleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="X5q-1d-8hN"/>
                         <viewControllerLayoutGuide type="bottom" id="tbh-rJ-ZaY"/>
@@ -354,10 +354,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yCc-MV-B3C">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using Sleepwalkers:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bui-0u-tgD">
-                                        <rect key="frame" x="74" y="15" width="226" height="34.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Using The Walking Sleep:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bui-0u-tgD">
+                                        <rect key="frame" x="44" y="40" width="287" height="34.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.5" id="Dex-Gm-7fP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
                                         <color key="textColor" red="0.95781792529999998" green="0.90515165099999995" blue="0.93234276039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -365,13 +368,13 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.16090483550000001" green="0.08762100816" blue="0.6755036485" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="bui-0u-tgD" firstAttribute="centerY" secondItem="yCc-MV-B3C" secondAttribute="centerY" id="8h9-GN-q39"/>
-                                    <constraint firstItem="bui-0u-tgD" firstAttribute="centerX" secondItem="yCc-MV-B3C" secondAttribute="centerX" id="RI4-aM-WbW"/>
-                                    <constraint firstAttribute="height" constant="64" id="WOO-oG-RVi"/>
+                                    <constraint firstItem="bui-0u-tgD" firstAttribute="top" secondItem="yCc-MV-B3C" secondAttribute="top" constant="40" id="FjU-2s-B3G"/>
+                                    <constraint firstAttribute="height" constant="75" id="WOO-oG-RVi"/>
+                                    <constraint firstItem="bui-0u-tgD" firstAttribute="centerX" secondItem="yCc-MV-B3C" secondAttribute="centerX" id="hug-ng-9hQ"/>
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ovR-Rg-n24">
-                                <rect key="frame" x="16" y="247.5" width="343" height="182"/>
+                                <rect key="frame" x="16" y="258" width="343" height="182"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-NY-XTd">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
@@ -460,7 +463,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VcT-PY-niK">
-                                <rect key="frame" x="24" y="80" width="327" height="89"/>
+                                <rect key="frame" x="24" y="91" width="327" height="89"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helpful Tools" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zKm-yQ-YHm">
                                         <rect key="frame" x="0.0" y="0.0" width="127.5" height="26.5"/>
@@ -477,7 +480,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Button Stages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oSE-ym-zKw">
-                                <rect key="frame" x="24" y="205" width="327" height="26.5"/>
+                                <rect key="frame" x="24" y="216" width="327" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -513,7 +516,7 @@
         <!--Welcome-->
         <scene sceneID="bc9-ak-RkI">
             <objects>
-                <viewController title="Welcome" id="buS-QP-YJk" customClass="InitialViewController" customModule="Sleepwalkers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Welcome" id="buS-QP-YJk" customClass="InitialViewController" customModule="The_Walking_Sleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NFy-Ny-pf2"/>
                         <viewControllerLayoutGuide type="bottom" id="r7h-h2-kth"/>
@@ -523,21 +526,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="710-P5-7fz" userLabel="TitleStackView">
-                                <rect key="frame" x="32" y="193" width="311" height="149"/>
+                                <rect key="frame" x="32" y="189.5" width="311" height="155"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Sleepwalkers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY5-Nc-EXF">
-                                        <rect key="frame" x="0.0" y="0.0" width="311" height="109.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to                The Walking Sleep" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PY5-Nc-EXF">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="82"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="30"/>
                                         <color key="textColor" red="0.95781792529999998" green="0.90515165097329531" blue="0.93234276037526598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stopping you from sleepwalking too far" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SZj-F1-i14">
-                                        <rect key="frame" x="0.0" y="125.5" width="311" height="23.5"/>
-                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="98" width="311" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="15"/>
                                         <color key="textColor" red="0.95781792529999998" green="0.90515165099999995" blue="0.93234276039999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Presented by Olivia Corrodi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6te-Jc-ZB0">
+                                        <rect key="frame" x="0.0" y="134.5" width="311" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-LightOblique" family="Avenir" pointSize="15"/>
+                                        <color key="textColor" red="0.98431372549999996" green="0.98431372549999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="6te-Jc-ZB0" firstAttribute="centerX" secondItem="710-P5-7fz" secondAttribute="centerX" id="Fqv-fP-6Py"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNK-Wx-66E">
                                 <rect key="frame" x="125" y="576" width="125" height="55"/>
@@ -571,12 +583,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4OV-gj-aCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-228" y="34.632683658170919"/>
+            <point key="canvasLocation" x="-535" y="188"/>
         </scene>
         <!--Preferences View Controller-->
         <scene sceneID="lnt-aO-e61">
             <objects>
-                <viewController id="KPa-Dh-Yfw" customClass="PreferencesViewController" customModule="Sleepwalkers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KPa-Dh-Yfw" customClass="PreferencesViewController" customModule="The_Walking_Sleep" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6qC-Cb-fos"/>
                         <viewControllerLayoutGuide type="bottom" id="fpv-CE-URv"/>
@@ -721,8 +733,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Ihg-Bf-E1S"/>
+        <segue reference="7Yw-4W-byX"/>
         <segue reference="Ecf-lV-z68"/>
-        <segue reference="1JJ-Yb-34K"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.40668481588363647" green="0.88075494766235352" blue="0.75688612461090088" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>
