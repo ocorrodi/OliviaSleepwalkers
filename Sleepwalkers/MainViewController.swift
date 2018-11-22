@@ -15,6 +15,7 @@ import AddressBookUI
 import CoreMotion
 import AudioToolbox
 import MediaPlayer
+import Alamofire
 
 class MainViewController : UIViewController, MFMessageComposeViewControllerDelegate {
     
@@ -62,6 +63,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     @IBOutlet weak var helpLabel: UILabel!
     
     @IBOutlet weak var sleepModeLabel2: UILabel!
+    let sharedDefaults = UserDefaults(suiteName: "group.TheWalkingSleep")
     
     
     
@@ -91,19 +93,37 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
                 let address = ABCreateStringWithAddressDictionary(pm.addressDictionary!, false)
                 self.location = address
             }
+            let headers = [
+                "Content-Type": "application/x-www-form-urlencoded"
+            ]
+            let contact = defaults.value(forKey: "contactName")
+            let name = defaults.value(forKey: "name")
+            //let loc = getLocation(manager: locationManager)
+            
+            let parameters: Parameters = [
+                "To": defaults.value(forKey: "contactNumber") ?? "",
+                "Body": "Hey \(contact!), \(name!) has sleepwalked and needs your help! Find them at \(self.location)"
+            ]
+            
+            
+            Alamofire.request("https://onyx-dalmatian-2821.twil.io/thewalkingsleep", method: .post, parameters: parameters, headers: headers).response { response in
+                print(response)
+                
+            }
             let composeVC = MFMessageComposeViewController()
-            let name = defaults.string(forKey: "contactName")!
+            //let name = defaults.string(forKey: "contactName")!
             composeVC.messageComposeDelegate = self
             composeVC.recipients = [defaults.string(forKey: "contactNumber")!]
             //           composeVC.recipients = [defaults.string(forKey: "contactName")!]
             var trimmed = self.location
             trimmed = trimmed.replacingOccurrences(of: "\n", with: ", ")
             composeVC.body = "Hey \(name), I sleepwalked and need your help! Find me around: \(trimmed)!"
+            defaults.setValue(trimmed, forKey: "location")
             self.activityView.stopAnimating()
-            self.present(composeVC, animated: true,completion: nil)
-            self.sendMessageButton.setTitle("Send Message to Contact", for: .normal)
-            
+            //self.present(composeVC, animated: true,completion: nil)
+            //self.sendMessageButton.setTitle("Send Message to Contact", for: .normal)
         }
+        //return trimmed
     }
     
     @IBAction func settingButtonTapped(_ sender: UIButton) {
@@ -120,8 +140,25 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     }
     
     @IBAction func getHelpButtonTapped(_ sender: UIButton) {
-        let location = getLocation(manager: locationManager)
-        reverseGeocoding(latitude: location.latitude, longitude: location.longitude)
+        let headers = [
+            "Content-Type": "application/x-www-form-urlencoded"
+        ]
+        let contact = defaults.value(forKey: "contactName")
+        let name = defaults.value(forKey: "name")
+        let loc = getLocation(manager: locationManager)
+        
+        let parameters: Parameters = [
+            "To": defaults.value(forKey: "contactNumber") ?? "",
+            "Body": "Hey \(contact), \(name) has sleepwalked and needs your help! Find them at \(location)"
+        ]
+        
+        
+        //Alamofire.request("https://onyx-dalmatian-2821.twil.io/thewalkingsleep", method: .post, parameters: parameters, headers: headers).response { response in
+            //print(response)
+            
+        //}
+        //let location = getLocation(manager: locationManager)
+        //reverseGeocoding(latitude: location.latitude, longitude: location.longitude)
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
@@ -137,6 +174,9 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     
     override func viewDidAppear(_ animated: Bool) {
         _ = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(MainViewController.detectSteps), userInfo: nil, repeats: isGettingLocation )
+        sharedDefaults?.synchronize()
+        sharedDefaults?.set(false, forKey: "isGettingLocation")
+        sharedDefaults?.set(false, forKey: "isRinging")
     }
     
     func reloadTimer() {
@@ -167,9 +207,11 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     //MARK: - Location related functions + Buttons
     
     @IBAction func mainButtonTapped(_ sender: UIButton) {
+        //self.getLocation(manager: locationManager)
         print(isGettingLocation)
         if isGettingLocation == true{
             isGettingLocation = false
+            sharedDefaults?.set(false, forKey: "isGettingLocation")
             avPlayer?.stop()
             avPlayer?.pause()
             isRinging = false
@@ -192,6 +234,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
             
         } else {
             isGettingLocation = true
+            sharedDefaults?.set(true, forKey: "isGettingLocation")
             self.reloadTimer()
             avPlayer?.stop()
             avPlayer?.pause()
@@ -214,6 +257,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
             avPlayer?.stop()
             avPlayer?.pause()
             isRinging = false
+            sharedDefaults?.set(false, forKey: "isRinging")
             isGettingLocation = false
             UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
             mainButton.setAttributedTitle(NSAttributedString(string: sunEmoji), for: .normal)
@@ -286,6 +330,7 @@ class MainViewController : UIViewController, MFMessageComposeViewControllerDeleg
     
     func getLocation(manager: CLLocationManager) -> CLLocationCoordinate2D {
         let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        reverseGeocoding(latitude: locValue.latitude, longitude: locValue.longitude)
         return locValue
     }
     

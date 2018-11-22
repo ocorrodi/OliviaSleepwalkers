@@ -1,0 +1,6 @@
+framework module Pods_The_Walking_Sleep_Tracker {
+  umbrella header "Pods-The Walking Sleep Tracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		120B5974ABD6EFD50B321BBE /* Pods_The_Walking_Sleep_Tracker_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F022D238B17B024AB9C9DE67 /* Pods_The_Walking_Sleep_Tracker_Extension.framework */; };
+		292CA7A5E4421925E6FE1CCA /* Pods_The_Walking_Sleep_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E0EB119220A0D78348ED2D /* Pods_The_Walking_Sleep_Tracker.framework */; };
+		81706E291AD5062F57A2C095 /* Pods_TheWalkingSleep_Tracker_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0B4D3C6554AE58A3A505507 /* Pods_TheWalkingSleep_Tracker_Extension.framework */; };
 		83BE1AFD1F11FBAD002E9986 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BE1AFC1F11FBAD002E9986 /* Main.storyboard */; };
 		83E1D55C1F120AA700EE9757 /* LightGearImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E1D55B1F120AA700EE9757 /* LightGearImage.png */; };
 		83E1D55E1F120AAC00EE9757 /* DarkGearImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 83E1D55D1F120AAC00EE9757 /* DarkGearImage.png */; };
 		9821838A1F12E85E0051F704 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982183891F12E85E0051F704 /* PreferencesViewController.swift */; };
 		9830E4601F0EA7680048A647 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9830E45F1F0EA7680048A647 /* InfoViewController.swift */; };
+		9851D3B5216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 9851D3B4216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		987F677D1F0C1C4100049BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987F677C1F0C1C4100049BEA /* AppDelegate.swift */; };
 		987F67841F0C1C4100049BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 987F67831F0C1C4100049BEA /* Assets.xcassets */; };
 		98DCF4781F0E011C005B1055 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCF4771F0E011C005B1055 /* ProfileViewController.swift */; };
@@ -19,30 +23,173 @@
 		98DCF47C1F0E012C005B1055 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DCF47B1F0E012C005B1055 /* InitialViewController.swift */; };
 		98DCF4801F0E013B005B1055 /* alarmNoise.wav in Resources */ = {isa = PBXBuildFile; fileRef = 98DCF47F1F0E013B005B1055 /* alarmNoise.wav */; };
 		98DCF4831F0E0142005B1055 /* Sleepwalkers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 98DCF4811F0E0142005B1055 /* Sleepwalkers.xcdatamodeld */; };
+		A4D33BE8348CD86876ECAA0F /* Pods_The_Walking_Sleep.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1AC75536C6C2C174D71B740 /* Pods_The_Walking_Sleep.framework */; };
+		BF03FA90216AE6C700B224EC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF03FA8E216AE6C700B224EC /* Interface.storyboard */; };
+		BF03FA92216AE6C900B224EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF03FA91216AE6C900B224EC /* Assets.xcassets */; };
+		BF03FA99216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BF03FA98216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BF03FA9E216AE6CA00B224EC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03FA9D216AE6CA00B224EC /* InterfaceController.swift */; };
+		BF03FAA0216AE6CA00B224EC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF03FA9F216AE6CA00B224EC /* ExtensionDelegate.swift */; };
+		BF03FAA2216AE6CB00B224EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF03FAA1216AE6CB00B224EC /* Assets.xcassets */; };
+		BF03FAA6216AE6CB00B224EC /* TheWalkingSleep Tracker.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = BF03FA8C216AE6C600B224EC /* TheWalkingSleep Tracker.app */; };
+		BF03FAB02170233800B224EC /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF03FAAF2170233800B224EC /* HealthKit.framework */; };
+		BF03FADA2172972D00B224EC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF03FA8E216AE6C700B224EC /* Interface.storyboard */; };
+		BF86E72B21742E410013D0A6 /* NewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF86E72A21742E410013D0A6 /* NewController.swift */; };
+		E6275F9B1391050BFBAA9CFE /* Pods_TheWalkingSleep_Tracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA4B3A5D10A4419375A16588 /* Pods_TheWalkingSleep_Tracker.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9851D3B6216ACE33004B4923 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987F67711F0C1C4100049BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9851D3B3216ACE33004B4923;
+			remoteInfo = "The Walking Sleep Tracker Extension";
+		};
+		BF03FA9A216AE6CA00B224EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987F67711F0C1C4100049BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF03FA97216AE6CA00B224EC;
+			remoteInfo = "TheWalkingSleep Tracker Extension";
+		};
+		BF03FAA4216AE6CB00B224EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987F67711F0C1C4100049BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF03FA8B216AE6C600B224EC;
+			remoteInfo = "TheWalkingSleep Tracker";
+		};
+		BF03FADB21741EFA00B224EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 987F67711F0C1C4100049BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF03FA97216AE6CA00B224EC;
+			remoteInfo = "TheWalkingSleep Tracker Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9851D3C9216ACE34004B4923 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9851D3B5216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9851D3CD216ACE34004B4923 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				BF03FAA6216AE6CB00B224EC /* TheWalkingSleep Tracker.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF03FAAA216AE6CB00B224EC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BF03FA99216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		15AB67EE82B33B7ABE2F2484 /* Pods-TheWalkingSleep Tracker Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWalkingSleep Tracker Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWalkingSleep Tracker Extension/Pods-TheWalkingSleep Tracker Extension.release.xcconfig"; sourceTree = "<group>"; };
+		53016A906ED5124F0F80BEBE /* Pods-The Walking Sleep Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep Tracker/Pods-The Walking Sleep Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		59C2D0F9BE5D0EF9E46B84D1 /* Pods-The Walking Sleep.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep/Pods-The Walking Sleep.release.xcconfig"; sourceTree = "<group>"; };
+		63575A1411E22ADA5204D396 /* Pods-The Walking Sleep.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep/Pods-The Walking Sleep.debug.xcconfig"; sourceTree = "<group>"; };
+		83525757731B2B9822CCFABC /* Pods-TheWalkingSleep Tracker Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWalkingSleep Tracker Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheWalkingSleep Tracker Extension/Pods-TheWalkingSleep Tracker Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		83BE1AFC1F11FBAD002E9986 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		83E1D55B1F120AA700EE9757 /* LightGearImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LightGearImage.png; sourceTree = "<group>"; };
 		83E1D55D1F120AAC00EE9757 /* DarkGearImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DarkGearImage.png; sourceTree = "<group>"; };
 		982183891F12E85E0051F704 /* PreferencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
 		9830E45F1F0EA7680048A647 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		9851D3A8216ACE2D004B4923 /* The Walking Sleep Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Walking Sleep Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9851D3B4216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "The Walking Sleep Tracker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		987F67791F0C1C4100049BEA /* The Walking Sleep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Walking Sleep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		987F677C1F0C1C4100049BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		987F67831F0C1C4100049BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		987F67881F0C1C4100049BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989BC0A4216AB0BF007F8FC3 /* The Walking Sleep.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "The Walking Sleep.entitlements"; sourceTree = SOURCE_ROOT; };
 		98DCF4771F0E011C005B1055 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		98DCF4791F0E0124005B1055 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		98DCF47B1F0E012C005B1055 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 		98DCF47F1F0E013B005B1055 /* alarmNoise.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = alarmNoise.wav; sourceTree = "<group>"; };
 		98DCF4821F0E0142005B1055 /* Sleepwalkers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sleepwalkers.xcdatamodel; sourceTree = "<group>"; };
+		9AC5E0EF93639D2ED756B889 /* Pods-The Walking Sleep Tracker Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep Tracker Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep Tracker Extension/Pods-The Walking Sleep Tracker Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		AA4B3A5D10A4419375A16588 /* Pods_TheWalkingSleep_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheWalkingSleep_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF03FA8C216AE6C600B224EC /* TheWalkingSleep Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TheWalkingSleep Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF03FA8F216AE6C700B224EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		BF03FA91216AE6C900B224EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF03FA93216AE6C900B224EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF03FA98216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TheWalkingSleep Tracker Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF03FA9D216AE6CA00B224EC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		BF03FA9F216AE6CA00B224EC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		BF03FAA1216AE6CB00B224EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF03FAA3216AE6CB00B224EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF03FAAE2170231100B224EC /* TheWalkingSleep Tracker Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TheWalkingSleep Tracker Extension.entitlements"; sourceTree = "<group>"; };
+		BF03FAAF2170233800B224EC /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.3.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		BF86E72A21742E410013D0A6 /* NewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewController.swift; sourceTree = "<group>"; };
+		C1AC75536C6C2C174D71B740 /* Pods_The_Walking_Sleep.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_Sleep.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFE4FE159E02C7D49C2E693D /* Pods-TheWalkingSleep Tracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWalkingSleep Tracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TheWalkingSleep Tracker/Pods-TheWalkingSleep Tracker.debug.xcconfig"; sourceTree = "<group>"; };
+		D0B4D3C6554AE58A3A505507 /* Pods_TheWalkingSleep_Tracker_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TheWalkingSleep_Tracker_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E0EB119220A0D78348ED2D /* Pods_The_Walking_Sleep_Tracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_Sleep_Tracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC4B99B5A398CDA52D14BCFE /* Pods-The Walking Sleep Tracker Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep Tracker Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep Tracker Extension/Pods-The Walking Sleep Tracker Extension.release.xcconfig"; sourceTree = "<group>"; };
+		DDA678E4201BF828C26B91CD /* Pods-TheWalkingSleep Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheWalkingSleep Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TheWalkingSleep Tracker/Pods-TheWalkingSleep Tracker.release.xcconfig"; sourceTree = "<group>"; };
+		F022D238B17B024AB9C9DE67 /* Pods_The_Walking_Sleep_Tracker_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_The_Walking_Sleep_Tracker_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F21B049DAF78AC82CF2B8327 /* Pods-The Walking Sleep Tracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-The Walking Sleep Tracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-The Walking Sleep Tracker/Pods-The Walking Sleep Tracker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6EB4E6264C46E8556E3822AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				292CA7A5E4421925E6FE1CCA /* Pods_The_Walking_Sleep_Tracker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9851D3B1216ACE33004B4923 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				120B5974ABD6EFD50B321BBE /* Pods_The_Walking_Sleep_Tracker_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		987F67761F0C1C4100049BEA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D33BE8348CD86876ECAA0F /* Pods_The_Walking_Sleep.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF03FA95216AE6CA00B224EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81706E291AD5062F57A2C095 /* Pods_TheWalkingSleep_Tracker_Extension.framework in Frameworks */,
+				BF03FAB02170233800B224EC /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCAF08660AFABE83A894ADC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6275F9B1391050BFBAA9CFE /* Pods_TheWalkingSleep_Tracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +212,11 @@
 			isa = PBXGroup;
 			children = (
 				987F677B1F0C1C4100049BEA /* The Walking Sleep */,
+				BF03FA8D216AE6C600B224EC /* TheWalkingSleep Tracker */,
+				BF03FA9C216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */,
 				987F677A1F0C1C4100049BEA /* Products */,
+				BAE1C36F697D8BB40CDD1DF2 /* Pods */,
+				E6217B041C285919C613C3DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +224,10 @@
 			isa = PBXGroup;
 			children = (
 				987F67791F0C1C4100049BEA /* The Walking Sleep.app */,
+				9851D3A8216ACE2D004B4923 /* The Walking Sleep Tracker.app */,
+				9851D3B4216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex */,
+				BF03FA8C216AE6C600B224EC /* TheWalkingSleep Tracker.app */,
+				BF03FA98216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +235,7 @@
 		987F677B1F0C1C4100049BEA /* The Walking Sleep */ = {
 			isa = PBXGroup;
 			children = (
+				989BC0A4216AB0BF007F8FC3 /* The Walking Sleep.entitlements */,
 				83E1D55D1F120AAC00EE9757 /* DarkGearImage.png */,
 				83E1D55B1F120AA700EE9757 /* LightGearImage.png */,
 				987F677C1F0C1C4100049BEA /* AppDelegate.swift */,
@@ -94,25 +250,158 @@
 			path = Sleepwalkers;
 			sourceTree = "<group>";
 		};
+		BAE1C36F697D8BB40CDD1DF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63575A1411E22ADA5204D396 /* Pods-The Walking Sleep.debug.xcconfig */,
+				59C2D0F9BE5D0EF9E46B84D1 /* Pods-The Walking Sleep.release.xcconfig */,
+				53016A906ED5124F0F80BEBE /* Pods-The Walking Sleep Tracker.debug.xcconfig */,
+				F21B049DAF78AC82CF2B8327 /* Pods-The Walking Sleep Tracker.release.xcconfig */,
+				9AC5E0EF93639D2ED756B889 /* Pods-The Walking Sleep Tracker Extension.debug.xcconfig */,
+				DC4B99B5A398CDA52D14BCFE /* Pods-The Walking Sleep Tracker Extension.release.xcconfig */,
+				CFE4FE159E02C7D49C2E693D /* Pods-TheWalkingSleep Tracker.debug.xcconfig */,
+				DDA678E4201BF828C26B91CD /* Pods-TheWalkingSleep Tracker.release.xcconfig */,
+				83525757731B2B9822CCFABC /* Pods-TheWalkingSleep Tracker Extension.debug.xcconfig */,
+				15AB67EE82B33B7ABE2F2484 /* Pods-TheWalkingSleep Tracker Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF03FA8D216AE6C600B224EC /* TheWalkingSleep Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				BF03FA8E216AE6C700B224EC /* Interface.storyboard */,
+				BF03FA91216AE6C900B224EC /* Assets.xcassets */,
+				BF03FA93216AE6C900B224EC /* Info.plist */,
+			);
+			path = "TheWalkingSleep Tracker";
+			sourceTree = "<group>";
+		};
+		BF03FA9C216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BF03FAAE2170231100B224EC /* TheWalkingSleep Tracker Extension.entitlements */,
+				BF03FA9D216AE6CA00B224EC /* InterfaceController.swift */,
+				BF86E72A21742E410013D0A6 /* NewController.swift */,
+				BF03FA9F216AE6CA00B224EC /* ExtensionDelegate.swift */,
+				BF03FAA1216AE6CB00B224EC /* Assets.xcassets */,
+				BF03FAA3216AE6CB00B224EC /* Info.plist */,
+			);
+			path = "TheWalkingSleep Tracker Extension";
+			sourceTree = "<group>";
+		};
+		E6217B041C285919C613C3DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF03FAAF2170233800B224EC /* HealthKit.framework */,
+				C1AC75536C6C2C174D71B740 /* Pods_The_Walking_Sleep.framework */,
+				D2E0EB119220A0D78348ED2D /* Pods_The_Walking_Sleep_Tracker.framework */,
+				F022D238B17B024AB9C9DE67 /* Pods_The_Walking_Sleep_Tracker_Extension.framework */,
+				AA4B3A5D10A4419375A16588 /* Pods_TheWalkingSleep_Tracker.framework */,
+				D0B4D3C6554AE58A3A505507 /* Pods_TheWalkingSleep_Tracker_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		987F67781F0C1C4100049BEA /* The Walking Sleep */ = {
+		9851D3A7216ACE2D004B4923 /* The Walking Sleep Tracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 987F678B1F0C1C4100049BEA /* Build configuration list for PBXNativeTarget "The Walking Sleep" */;
+			buildConfigurationList = 9851D3CA216ACE34004B4923 /* Build configuration list for PBXNativeTarget "The Walking Sleep Tracker" */;
 			buildPhases = (
-				987F67751F0C1C4100049BEA /* Sources */,
-				987F67761F0C1C4100049BEA /* Frameworks */,
-				987F67771F0C1C4100049BEA /* Resources */,
+				05B30F200EDD856635A20312 /* [CP] Check Pods Manifest.lock */,
+				9851D3A6216ACE2D004B4923 /* Resources */,
+				9851D3C9216ACE34004B4923 /* Embed App Extensions */,
+				6EB4E6264C46E8556E3822AD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9851D3B7216ACE33004B4923 /* PBXTargetDependency */,
+			);
+			name = "The Walking Sleep Tracker";
+			productName = "The Walking Sleep Tracker";
+			productReference = 9851D3A8216ACE2D004B4923 /* The Walking Sleep Tracker.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		9851D3B3216ACE33004B4923 /* The Walking Sleep Tracker Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9851D3C6216ACE34004B4923 /* Build configuration list for PBXNativeTarget "The Walking Sleep Tracker Extension" */;
+			buildPhases = (
+				A1A54227D4F0B2F26D9921B9 /* [CP] Check Pods Manifest.lock */,
+				9851D3B0216ACE33004B4923 /* Sources */,
+				9851D3B1216ACE33004B4923 /* Frameworks */,
+				9851D3B2216ACE33004B4923 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = "The Walking Sleep Tracker Extension";
+			productName = "The Walking Sleep Tracker Extension";
+			productReference = 9851D3B4216ACE33004B4923 /* The Walking Sleep Tracker Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		987F67781F0C1C4100049BEA /* The Walking Sleep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 987F678B1F0C1C4100049BEA /* Build configuration list for PBXNativeTarget "The Walking Sleep" */;
+			buildPhases = (
+				020CC4E987DFA472CFE83DC3 /* [CP] Check Pods Manifest.lock */,
+				987F67751F0C1C4100049BEA /* Sources */,
+				987F67761F0C1C4100049BEA /* Frameworks */,
+				987F67771F0C1C4100049BEA /* Resources */,
+				9851D3CD216ACE34004B4923 /* Embed Watch Content */,
+				7F085C8F9150AAD2DF62518C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF03FADC21741EFA00B224EC /* PBXTargetDependency */,
+				BF03FAA5216AE6CB00B224EC /* PBXTargetDependency */,
+			);
 			name = "The Walking Sleep";
 			productName = Sleepwalkers;
 			productReference = 987F67791F0C1C4100049BEA /* The Walking Sleep.app */;
 			productType = "com.apple.product-type.application";
+		};
+		BF03FA8B216AE6C600B224EC /* TheWalkingSleep Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF03FAAB216AE6CB00B224EC /* Build configuration list for PBXNativeTarget "TheWalkingSleep Tracker" */;
+			buildPhases = (
+				904EACF8470C40E4A8C250E2 /* [CP] Check Pods Manifest.lock */,
+				BF03FA8A216AE6C600B224EC /* Resources */,
+				BF03FAAA216AE6CB00B224EC /* Embed App Extensions */,
+				FCAF08660AFABE83A894ADC6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF03FA9B216AE6CA00B224EC /* PBXTargetDependency */,
+			);
+			name = "TheWalkingSleep Tracker";
+			productName = "TheWalkingSleep Tracker";
+			productReference = BF03FA8C216AE6C600B224EC /* TheWalkingSleep Tracker.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		BF03FA97216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF03FAA7216AE6CB00B224EC /* Build configuration list for PBXNativeTarget "TheWalkingSleep Tracker Extension" */;
+			buildPhases = (
+				F78739245634F609A14FA1E1 /* [CP] Check Pods Manifest.lock */,
+				BF03FA94216AE6CA00B224EC /* Sources */,
+				BF03FA95216AE6CA00B224EC /* Frameworks */,
+				BF03FA96216AE6CA00B224EC /* Resources */,
+				06C7976E5555542D32E58D90 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TheWalkingSleep Tracker Extension";
+			productName = "TheWalkingSleep Tracker Extension";
+			productReference = BF03FA98216AE6CA00B224EC /* TheWalkingSleep Tracker Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -120,14 +409,55 @@
 		987F67711F0C1C4100049BEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Olivia Corrodi";
 				TargetAttributes = {
+					9851D3A7216ACE2D004B4923 = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = 6H25GX37P8;
+						ProvisioningStyle = Automatic;
+					};
+					9851D3B3216ACE33004B4923 = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = 6H25GX37P8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
 					987F67781F0C1C4100049BEA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 6H25GX37P8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					BF03FA8B216AE6C600B224EC = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 6H25GX37P8;
+						ProvisioningStyle = Automatic;
+					};
+					BF03FA97216AE6CA00B224EC = {
+						CreatedOnToolsVersion = 9.4.1;
+						DevelopmentTeam = 6H25GX37P8;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+							com.apple.HealthKit.watchos = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -145,11 +475,29 @@
 			projectRoot = "";
 			targets = (
 				987F67781F0C1C4100049BEA /* The Walking Sleep */,
+				9851D3A7216ACE2D004B4923 /* The Walking Sleep Tracker */,
+				9851D3B3216ACE33004B4923 /* The Walking Sleep Tracker Extension */,
+				BF03FA8B216AE6C600B224EC /* TheWalkingSleep Tracker */,
+				BF03FA97216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9851D3A6216ACE2D004B4923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9851D3B2216ACE33004B4923 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		987F67771F0C1C4100049BEA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,9 +510,163 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF03FA8A216AE6C600B224EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF03FA92216AE6C900B224EC /* Assets.xcassets in Resources */,
+				BF03FA90216AE6C700B224EC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF03FA96216AE6CA00B224EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF03FADA2172972D00B224EC /* Interface.storyboard in Resources */,
+				BF03FAA2216AE6CB00B224EC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		020CC4E987DFA472CFE83DC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking Sleep-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		05B30F200EDD856635A20312 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking Sleep Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		06C7976E5555542D32E58D90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TheWalkingSleep Tracker Extension/Pods-TheWalkingSleep Tracker Extension-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-watchOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TheWalkingSleep Tracker Extension/Pods-TheWalkingSleep Tracker Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F085C8F9150AAD2DF62518C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-The Walking Sleep/Pods-The Walking Sleep-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-The Walking Sleep/Pods-The Walking Sleep-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		904EACF8470C40E4A8C250E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheWalkingSleep Tracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A1A54227D4F0B2F26D9921B9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-The Walking Sleep Tracker Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F78739245634F609A14FA1E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TheWalkingSleep Tracker Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		9851D3B0216ACE33004B4923 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		987F67751F0C1C4100049BEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,9 +681,185 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF03FA94216AE6CA00B224EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF03FAA0216AE6CA00B224EC /* ExtensionDelegate.swift in Sources */,
+				BF86E72B21742E410013D0A6 /* NewController.swift in Sources */,
+				BF03FA9E216AE6CA00B224EC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9851D3B7216ACE33004B4923 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9851D3B3216ACE33004B4923 /* The Walking Sleep Tracker Extension */;
+			targetProxy = 9851D3B6216ACE33004B4923 /* PBXContainerItemProxy */;
+		};
+		BF03FA9B216AE6CA00B224EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF03FA97216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */;
+			targetProxy = BF03FA9A216AE6CA00B224EC /* PBXContainerItemProxy */;
+		};
+		BF03FAA5216AE6CB00B224EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF03FA8B216AE6C600B224EC /* TheWalkingSleep Tracker */;
+			targetProxy = BF03FAA4216AE6CB00B224EC /* PBXContainerItemProxy */;
+		};
+		BF03FADC21741EFA00B224EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF03FA97216AE6CA00B224EC /* TheWalkingSleep Tracker Extension */;
+			targetProxy = BF03FADB21741EFA00B224EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF03FA8E216AE6C700B224EC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF03FA8F216AE6C700B224EC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		9851D3C7216ACE34004B4923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AC5E0EF93639D2ED756B889 /* Pods-The Walking Sleep Tracker Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Sleep Tracker Extension/The Walking Sleep Tracker Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "The Walking Sleep Tracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9851D3C8216ACE34004B4923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4B99B5A398CDA52D14BCFE /* Pods-The Walking Sleep Tracker Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Sleep Tracker Extension/The Walking Sleep Tracker Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "The Walking Sleep Tracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		9851D3CB216ACE34004B4923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53016A906ED5124F0F80BEBE /* Pods-The Walking Sleep Tracker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = The_Walking_Sleep_Tracker_Extension;
+				INFOPLIST_FILE = "The Walking Sleep Tracker/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		9851D3CC216ACE34004B4923 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F21B049DAF78AC82CF2B8327 /* Pods-The Walking Sleep Tracker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = The_Walking_Sleep_Tracker_Extension;
+				INFOPLIST_FILE = "The Walking Sleep Tracker/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 		987F67891F0C1C4100049BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -192,15 +870,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -229,6 +915,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
@@ -242,15 +929,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -272,13 +967,16 @@
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
 		987F678C1F0C1C4100049BEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63575A1411E22ADA5204D396 /* Pods-The Walking Sleep.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Sleep.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6H25GX37P8;
 				INFOPLIST_FILE = Sleepwalkers/Info.plist;
@@ -293,8 +991,10 @@
 		};
 		987F678D1F0C1C4100049BEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59C2D0F9BE5D0EF9E46B84D1 /* Pods-The Walking Sleep.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "The Walking Sleep.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6H25GX37P8;
 				INFOPLIST_FILE = Sleepwalkers/Info.plist;
@@ -307,9 +1007,157 @@
 			};
 			name = Release;
 		};
+		BF03FAA8216AE6CB00B224EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83525757731B2B9822CCFABC /* Pods-TheWalkingSleep Tracker Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "TheWalkingSleep Tracker Extension/TheWalkingSleep Tracker Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "TheWalkingSleep Tracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BF03FAA9216AE6CB00B224EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15AB67EE82B33B7ABE2F2484 /* Pods-TheWalkingSleep Tracker Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "TheWalkingSleep Tracker Extension/TheWalkingSleep Tracker Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "TheWalkingSleep Tracker Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		BF03FAAC216AE6CB00B224EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFE4FE159E02C7D49C2E693D /* Pods-TheWalkingSleep Tracker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = TheWalkingSleep_Tracker_Extension;
+				INFOPLIST_FILE = "TheWalkingSleep Tracker/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		BF03FAAD216AE6CB00B224EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDA678E4201BF828C26B91CD /* Pods-TheWalkingSleep Tracker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6H25GX37P8;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = TheWalkingSleep_Tracker_Extension;
+				INFOPLIST_FILE = "TheWalkingSleep Tracker/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = net.thewalkingsleep.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9851D3C6216ACE34004B4923 /* Build configuration list for PBXNativeTarget "The Walking Sleep Tracker Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9851D3C7216ACE34004B4923 /* Debug */,
+				9851D3C8216ACE34004B4923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9851D3CA216ACE34004B4923 /* Build configuration list for PBXNativeTarget "The Walking Sleep Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9851D3CB216ACE34004B4923 /* Debug */,
+				9851D3CC216ACE34004B4923 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		987F67741F0C1C4100049BEA /* Build configuration list for PBXProject "The Walking Sleep" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -324,6 +1172,24 @@
 			buildConfigurations = (
 				987F678C1F0C1C4100049BEA /* Debug */,
 				987F678D1F0C1C4100049BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF03FAA7216AE6CB00B224EC /* Build configuration list for PBXNativeTarget "TheWalkingSleep Tracker Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF03FAA8216AE6CB00B224EC /* Debug */,
+				BF03FAA9216AE6CB00B224EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF03FAAB216AE6CB00B224EC /* Build configuration list for PBXNativeTarget "TheWalkingSleep Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF03FAAC216AE6CB00B224EC /* Debug */,
+				BF03FAAD216AE6CB00B224EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

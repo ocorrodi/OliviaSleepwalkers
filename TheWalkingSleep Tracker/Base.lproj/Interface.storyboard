@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+    </dependencies>
+    <scenes>
+        <!--MainController-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="MainController" id="AgC-eL-Hgc" customClass="NewController" customModule="TheWalkingSleep_Tracker_Extension">
+                    <items>
+                        <button width="1" height="106" alignment="left" id="zD9-ly-c3A">
+                            <fontDescription key="font" type="system" pointSize="50"/>
+                            <connections>
+                                <action selector="mainButtonTapped:" destination="AgC-eL-Hgc" id="D4J-Ki-EsC"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Send Message" id="WI5-WO-T1v">
+                            <connections>
+                                <action selector="getHelpButtonTapped:" destination="AgC-eL-Hgc" id="gCA-Fa-oi8"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="mainButton" destination="zD9-ly-c3A" id="kFI-Yi-riT"/>
+                        <outlet property="sendMessageButton" destination="WI5-WO-T1v" id="LDd-k1-dT2"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="129" y="114"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,6 @@
+framework module Pods_TheWalkingSleep_Tracker_Extension {
+  umbrella header "Pods-TheWalkingSleep Tracker Extension-umbrella.h"
+
+  export *
+  module * { export * }
+}

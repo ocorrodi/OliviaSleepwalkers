@@ -24,6 +24,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
 
     var name : String?
     var alreadyEntered = true
+    let sharedDefaults = UserDefaults(suiteName: "group.TheWalkingSleep")
     
     
     
@@ -50,7 +51,7 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         nameTextField.delegate = self
         contactNameTextField.delegate = self
         contactNumberTextField.delegate = self
-        
+        sharedDefaults?.synchronize()
         nextButton.layer.cornerRadius = 15
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ProfileViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -93,6 +94,9 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
             defaults.set(contactNumberTextField.text, forKey:"contactNumber")
             defaults.set(nameTextField.text, forKey:"name")
             defaults.set(contactNameTextField.text, forKey:"contactName")
+            //sharedDefaults?.set(contactNumberTextField, forKey: "contactNumber")
+            //sharedDefaults?.set(nameTextField, forKey: "name")
+            //sharedDefaults?.set(contactNameTextField, forKey: "contactName")
             
             if self.name != "" {
                 //self.dismiss(animated: true, completion: {

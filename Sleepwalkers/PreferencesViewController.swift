@@ -17,10 +17,11 @@ class PreferencesViewController: UIViewController {
     @IBOutlet weak var segmentedControl1: UISegmentedControl!
     
     @IBOutlet weak var segmentedControl2: UISegmentedControl!
-    
+    let sharedDefaults = UserDefaults(suiteName: "group.TheWalkingSleep")
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        sharedDefaults?.synchronize()
     }
     override var preferredStatusBarStyle: UIStatusBarStyle {
             return .lightContent
@@ -40,14 +41,16 @@ class PreferencesViewController: UIViewController {
         case 0:
             sleepHeaviness = 0.2
             defaults.set(sleepHeaviness, forKey:"sleepHeaviness");
-            
+            sharedDefaults?.set(sleepHeaviness, forKey: "sleepHeaviness");
         case 1:
             sleepHeaviness = 0.4
             defaults.set(sleepHeaviness, forKey:"sleepHeaviness");
+            sharedDefaults?.set(sleepHeaviness, forKey: "sleepHeaviness");
             
         case 2:
             sleepHeaviness = 0.6
             defaults.set(sleepHeaviness, forKey:"sleepHeaviness");
+            sharedDefaults?.set(sleepHeaviness, forKey: "sleepHeaviness");
         
         default:
             break;
@@ -61,14 +64,16 @@ class PreferencesViewController: UIViewController {
         case 0:
             move = 8
             defaults.set(move, forKey:"move");
-            
+            sharedDefaults?.set(move, forKey: "move");
         case 1:
             move = 9
             defaults.set(move, forKey:"move");
+            sharedDefaults?.set(move, forKey: "move");
             
         case 2:
             move = 10
             defaults.set(move, forKey:"move");
+            sharedDefaults?.set(move, forKey: "move");
             
         default:
             break;
